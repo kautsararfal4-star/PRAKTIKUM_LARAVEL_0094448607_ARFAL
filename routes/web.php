@@ -8,4 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login' function (petugasController::class));
+

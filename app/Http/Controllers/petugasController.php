@@ -6,7 +6,7 @@ use Illuminate\Auth;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;
 use Symfony\Component\Routing\Annotation\Route;
-use Illuminate\Database\Events\ModelsPruned
+use Illuminate\Database\Events\ModelsPruned;
 
 class petugasController extends Controller
 {
@@ -18,7 +18,7 @@ class petugasController extends Controller
         
           $ambildata=-$request->only('email','password');
 
-        if (auth::attempt($ambildata)){
+        if (Auth::attempt($ambildata)){
             $request->validate([
                 'email'=>'required',
                 'password'=>'required'
