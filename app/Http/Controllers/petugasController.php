@@ -18,7 +18,7 @@ class petugasController extends Controller
         
           $ambildata=-$request->only('email','password');
 
-        if (Auth::attempt($ambildata)){
+        if (auth::attempt($ambildata)){
             $request->validate([
                 'email'=>'required',
                 'password'=>'required'
