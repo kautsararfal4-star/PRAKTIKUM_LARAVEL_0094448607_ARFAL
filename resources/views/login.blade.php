@@ -106,7 +106,7 @@
       .auth-footer a:hover {
         text-decoration: underline;
       }
-    </style>
+    </style>login
   </head>
   <body>
     <div class="auth-card">
